@@ -1,0 +1,1 @@
+mvn test -Dbrowser=chrome    (To run test case in chrome browser)

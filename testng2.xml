@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name="core.Listeners"></listener>
+	</listeners>
+	<parameter name="url" value="http://www.google.com"></parameter>
+
+	<test thread-count="5" name="Test">
+		<classes>
+			<!--<class name="core.Launch" />
+			 <class name="core.WindowHandleConcept" />
+			<class name="core.AlertConcept" />-->
+			<class name="core.ScrollConcept">
+				<methods>
+					<include name="scrolling1"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->
